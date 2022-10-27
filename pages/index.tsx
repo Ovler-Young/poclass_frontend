@@ -1,9 +1,11 @@
+import { posix as pathPosix } from 'path'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Video from '../components/video'
 
-const Home: NextPage = () => {
+
+export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
@@ -16,11 +18,9 @@ const Home: NextPage = () => {
           DEMO1
         </h1>
 
-        <Video src="/VIDEO/1.mp4" type="video/mp4" />
+        <Video src="https://share.180811.xyz/api/raw/?path=/poclass/1.mp4" type="video/mp4" />
       </main>
 
     </div>
   )
 }
-
-export default Home
